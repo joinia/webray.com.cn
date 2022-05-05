@@ -22,18 +22,16 @@ webraybtl@webray.com.cn inc
 
 3. Put XSS payload  (<script>alert(1)</script>) in the content box and click on save to publish the page
 
-   <img src="D:\cves\Bludit\images\add.png" alt="add" style="zoom: 33%;" />
+    ![image](https://github.com/joinia/webray.com.cn/blob/main/Bludit/images/add.png)
 
 4. Use "burp"  to capture and change packages
 
-   ![package-1](D:\cves\Bludit\images\package-1.png)
+   ![image](https://github.com/joinia/webray.com.cn/blob/main/Bludit/images/package-1.png)
 
-   ![package-2](D:\cves\Bludit\images\package-2.png)
+   ![image](https://github.com/joinia/webray.com.cn/blob/main/Bludit/images/package-2.png)
 
 5. Viewing the successfully published page,We can see the alert.
 
-
-
- ![finish](D:\cves\Bludit\images\finish.png)
-
-![alert](D:\cves\Bludit\images\alert.png)
+   ![image](https://github.com/joinia/webray.com.cn/blob/main/Bludit/images/finish.png)
+ 
+   ![image](https://github.com/joinia/webray.com.cn/blob/main/Bludit/images/alert.png)
