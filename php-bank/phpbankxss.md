@@ -20,7 +20,8 @@ Persistent XSS (or Stored XSS) attack is one of the three major categories of XS
 
 `<script>alert("XSS")</script>`
 
-```POST /mnotice.php?id=2 HTTP/1.1
+```
+POST /mnotice.php?id=2 HTTP/1.1
 Host: 192.168.67.14:8089
 Content-Length: 69
 Cache-Control: max-age=0
