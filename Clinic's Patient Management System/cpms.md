@@ -43,15 +43,15 @@ user_name=admin' AND GTID_SUBSET(CONCAT(0,(SELECT user()),0),3619) AND 'XOyz'='X
 
 2、Looking at the source code, it is found that the password field is directly brought into the SQL statement query without filtering
 
-![](D:\cves\Loan-Management-System\images\sourcecodesql.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Clinic's Patient Management System/images/sourcecodesql.png)
 
 3、During manual testing, it is found that SQL error reporting injection exists, so the sensitive information and permissions of the database can be obtained by using the error reporting injection function
 
-![](D:\cves\Loan-Management-System\images\sqlresult1.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Clinic's Patient Management System/images/sqlresult1.png)
 
-![](D:\cves\Loan-Management-System\images\sqlresult.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Clinic's Patient Management System/images/sqlresult.png)
 
 4、Using the tool to test, it is found that there is also blind SQL time injection
 
-![](D:\cves\Loan-Management-System\images\sqlresult2.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Clinic's Patient Management System/images/sqlresult2.png)
 
