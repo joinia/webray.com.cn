@@ -43,16 +43,16 @@ username=admin'union select 1,sleep(10),3,4,5#&password=admin&login=
 
 2、Looking at the source code, it is found that the password field is directly brought into the SQL statement query without filtering
 
-![](D:\cves\Loan-Management-System\images\sourcecodesql.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/sourcecodesql.png)
 
 3、Use payload "sleep (10)" for blind SQL injection.It is found that the time blind injection is successful
 
-![](D:\cves\Loan-Management-System\images\sleep10.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/sleep10.png)
 
 4、We can also use the universal account and password to log in to the system
 
 payload:`username=123'or '1'='1' --+&password=admin&login=`
 
-![](D:\cves\Loan-Management-System\images\universalaccount.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/php-bank/images/universalaccount.png)
 
 SQL injection also exists in the "password" field, so I won't describe it in detail here.
