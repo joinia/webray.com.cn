@@ -41,19 +41,19 @@ medicine=1 AND GTID_SUBSET(CONCAT(0,(SELECT user()),0),3619)&packing=11&submit=
 
 1、After logging in, use the add medicine function to capture and analyze the traffic, and find that the program is in medicine_details.php.
 
-![](D:\cves\Loan-Management-System\images\meidicineshow.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Clinic's-Patient-Management-System/imagesmeidicineshow.png)
 
 2、Looking at the source code, it is found that the password field is directly brought into the SQL statement query without filtering
 
-![](D:\cves\Loan-Management-System\images\medicinesourcecode.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Clinic's-Patient-Management-System/imagesmedicinesourcecode.png)
 
 3、During manual testing, it is found that SQL error reporting injection exists, so the sensitive information and permissions of the database can be obtained by using the error reporting 
 
-![](D:\cves\Loan-Management-System\images\medicinesqlresult1.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Clinic's-Patient-Management-System/imagesmedicinesqlresult1.png)
 
-![](D:\cves\Loan-Management-System\images\medicinesql.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Clinic's-Patient-Management-System/imagesmedicinesql.png)
 
 4、Through testing with the tool, it is found that there are other injection methods such as blind SQL time injection.
 
-![](D:\cves\Loan-Management-System\images\medicinesqlresult2.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Clinic's-Patient-Management-System/imagesmedicinesqlresult2.png)
 
