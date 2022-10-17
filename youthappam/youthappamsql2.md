@@ -54,5 +54,5 @@ Connection: close
 
 5、Through testing with the tool, it is found that there are other injection methods such as blind SQL time injection.
 
-![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/images\editusersqlmap.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/editusersqlmap.png)
 
