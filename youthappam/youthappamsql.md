@@ -1,6 +1,6 @@
-# Canteen Management System - login.php 'medicine' SQL inject
+# Canteen Management System - login.php 'username' SQL inject
 
-#### Exploit Title: Canteen Management System - login.php 'medicine' SQL inject
+#### Exploit Title: Canteen Management System - login.php 'username' SQL inject
 
 #### Exploit Author: [webraybtl@webray.com.cn](mailto:webraybtl@webray.com.cn) inc
 
