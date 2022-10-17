@@ -41,23 +41,23 @@ username=1' AND (SELECT 6691 FROM (SELECT(SLEEP(5)))slLY) AND 'lrcD'='lrcD&passw
 
 1、Grab the package at the login and find that the login program is in login php
 
-![](D:\cves\youthappam\images\login.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/login.png)
 
 2、Looking at the source code, it is found that the password field is directly brought into the SQL statement query without filtering
 
-![](D:\cves\youthappam\images\usernamesouce.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/usernamesouce.png)
 
 3、Use payload "sleep (10)" for blind SQL injection.It is found that the time blind injection is successful
 
-![usernameburp](D:\cves\youthappam\images\usernameburp.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/usernameburp.png)
 
 4、We can also construct a payload for universal password login
 
 payload:`email=manager%40manager.com&password=1'or '1'='1&managerLogin=`
 
-![usernameloginsuccess](D:\cves\youthappam\images\usernameloginsuccess.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/usernameloginsuccess.png)
 
 4、Through testing with the tool, it is found that there are other injection methods such as blind SQL time injection.
 
-![usernamesqlmap](D:\cves\youthappam\images\usernamesqlmap.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/usernamesqlmap.png)
 
