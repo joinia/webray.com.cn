@@ -1,6 +1,6 @@
-# Canteen Management System - login.php 'medicine' SQL inject
+# Canteen Management System - edituser.php 'id' SQL inject
 
-#### Exploit Title: Canteen Management System - login.php 'medicine' SQL inject
+#### Exploit Title: Canteen Management System - login.php 'id' SQL inject
 
 #### Exploit Author: [webraybtl@webray.com.cn](mailto:webraybtl@webray.com.cn) inc
 
@@ -14,12 +14,11 @@
 
 #### Description
 
-The reason for the SQL injection vulnerability is that the website application does not verify the validity of the data submitted by the user to the server (type, length, business parameter validity, etc.), and does not effectively filter the data input by the user with special characters , so that the user's input is directly brought into the database for execution, which exceeds the expected result of the original design of the SQL statement, resulting in a SQL injection vulnerability.Canteen Management System does not filter the content correctly at the "login.php /username" parameter, resulting in the generation of SQL injection.
+The reason for the SQL injection vulnerability is that the website application does not verify the validity of the data submitted by the user to the server (type, length, business parameter validity, etc.), and does not effectively filter the data input by the user with special characters , so that the user's input is directly brought into the database for execution, which exceeds the expected result of the original design of the SQL statement, resulting in a SQL injection vulnerability.Canteen Management System does not filter the content correctly at the "edituser.php /id" parameter, resulting in the generation of SQL injection.
 
 #### Payload used:
 
-```POST /medicine_details.php HTTP/1.1
-GET /edituser.php?id=-7956'%20UNION%20ALL%20SELECT%20NULL,md5(1),NULL,NULL--+ HTTP/1.1
+```GET /edituser.php?id=-7956'%20UNION%20ALL%20SELECT%20NULL,md5(1),NULL,NULL--+ HTTP/1.1
 Host: 192.168.67.10:8091
 Cache-Control: max-age=0
 Upgrade-Insecure-Requests: 1
@@ -36,23 +35,23 @@ Connection: close
 
 1、After logging in, use the Edit User function
 
-![edituserhtml](D:\cves\youthappam\images\edituserhtml.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/edituserhtml.png)
 
 2、Looking at the source code, it is found that the id field is directly brought into the SQL statement query without filtering
 
-![](D:\cves\youthappam\images\editusersouce.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/editusersouce.png)
 
 
 
 3、
 
-![](D:\cves\youthappam\images\edituserburp.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/edituserburp.png)
 
 4、The results can be directly echoed on the page by constructing correct SQL statements
 
-![edituserresult](D:\cves\youthappam\images\edituserresult.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/edituserresult.png)
 
 5、Through testing with the tool, it is found that there are other injection methods such as blind SQL time injection.
 
-![usernamesqlmap](D:\cves\youthappam\images\editusersqlmap.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/youthappam/images/images\editusersqlmap.png)
 
