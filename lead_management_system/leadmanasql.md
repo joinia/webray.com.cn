@@ -50,7 +50,7 @@ username=1' AND (SELECT 6691 FROM (SELECT(SLEEP(5)))slLY) AND 'lrcD'='lrcD&passw
 
 3、Use payload "sleep (5)" for blind SQL injection.It is found that the time blind injection is successful
 
-![image](https://github.com/joinia/webray.com.cn/tree/main/lead_management_system/images/timesql.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Loan-Management-System/images/sourcecodesql.png)
 
 4、We can also construct a payload for universal password login
 
