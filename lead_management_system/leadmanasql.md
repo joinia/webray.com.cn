@@ -1,6 +1,3 @@
----
-typora-root-url: ./images
----
 
 # Lead management system - login.php 'username' SQL inject
 
@@ -45,23 +42,23 @@ username=1' AND (SELECT 6691 FROM (SELECT(SLEEP(5)))slLY) AND 'lrcD'='lrcD&passw
 
 1、Grab the package at the login and find that the login program is in login php
 
-![](/login.png)
+![image](https://github.com/joinia/webray.com.cn/tree/main/lead_management_system/images/login.png)
 
 2、Looking at the source code, it is found that the password field is directly brought into the SQL statement query without filtering
 
-![](/code.png)
+![image](https://github.com/joinia/webray.com.cn/tree/main/lead_management_system/images/code.png)
 
 3、Use payload "sleep (5)" for blind SQL injection.It is found that the time blind injection is successful
 
-![](/timesql.png)
+![image](https://github.com/joinia/webray.com.cn/tree/main/lead_management_system/images/timesql.png)
 
 4、We can also construct a payload for universal password login
 
 payload:`username=1'or 1=1 #&password=123456&login=`
 
-、![](/loginwithanyuser.png)
+![image](https://github.com/joinia/webray.com.cn/tree/main/lead_management_system/images/loginwithanyuser.png)
 
 4、Through testing with the tool, it is found that there are other injection methods such as blind SQL time injection.
 
-![](/sqlmap.png)
+![image](https://github.com/joinia/webray.com.cn/tree/main/lead_management_system/images/sqlmap.png)
 
