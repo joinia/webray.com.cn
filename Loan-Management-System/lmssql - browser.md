@@ -1,6 +1,6 @@
 
 
-# Loan Management System - login.php 'password' SQL inject
+# Loan Management System - deleteBorrower.php 'borrower_id' SQL inject
 
 #### Exploit Title: Loan Management System - login.php 'username' SQL inject
 
