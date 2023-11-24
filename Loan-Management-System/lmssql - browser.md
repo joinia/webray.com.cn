@@ -2,7 +2,7 @@
 
 # Loan Management System - deleteBorrower.php 'borrower_id' SQL inject
 
-#### Exploit Title: Loan Management System - login.php 'username' SQL inject
+#### Exploit Title: Loan Management System - deleteBorrower.php 'borrower_id' SQL inject
 
 #### Exploit Author: [webraybtl@webray.com.cn](mailto:webraybtl@webray.com.cn) inc
 
