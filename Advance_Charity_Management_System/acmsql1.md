@@ -1,4 +1,4 @@
-## Advance Charity Management System - login.php 'password' SQL inject
+## Advance Charity Management System - login.php 'username' SQL inject
 
 #### Advance Charity Management System - login.php 'username' SQL inject
 
