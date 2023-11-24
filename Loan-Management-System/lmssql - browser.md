@@ -1,6 +1,4 @@
----
-typora-root-url: ./images
----
+
 
 # Loan Management System - login.php 'password' SQL inject
 
@@ -41,18 +39,18 @@ Connection: close
 
 2、Add a piece of data on the Borrower page
 
-![browsersql1](/browsersql1.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Loan-Management-System/images/browsersql1.png)
 
 3、Click 'delete' and grab the package, locate the file as' deleteBrower.php '.Looking at the source code, it is found that the borrower_id field is directly brought into the SQL statement query without filtering
 
- ![browsersql2](/browsersql2.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Loan-Management-System/images/browsersql2.png)
 
 4、We can construct SQL statements to query the name of the database
 
 payload:`http://xxxx/deleteBorrower.php?borrower_id=1'%20AND%20GTID_SUBSET(CONCAT("data:",database()),8194)--%20GZSp`
 
- ![image-20231124164743407](/browsersql3.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Loan-Management-System/images/browsersql3.png)
 
 5、Testing using the sqlmap tool can also detect SQL injection vulnerabilities
 
-![image-20231124165021375](/browsersql4.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Loan-Management-System/images/browsersql4.png)
