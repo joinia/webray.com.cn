@@ -42,18 +42,18 @@ Connection: close
 
 2、Add a piece of data on the 'Loan Type' page
 
-![](/itype1.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Loan-Management-System/images/itype1.png)
 
 3、Click 'delete' and grab the package, locate the file as 'delete_ltype.php '.Looking at the source code, it is found that the ltype_id field is directly brought into the SQL statement query without filtering
 
- ![](/itype2.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Loan-Management-System/images/itype2.png)
 
 4、We can construct SQL statements to query the name of the database
 
 payload:`http://xxxx/delete_ltype.php?ltype_id=1'%20AND%20GTID_SUBSET(CONCAT("data:",database()),8194)--%20GZSp&user= `
 
- ![](/itype3.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Loan-Management-System/images/itype3.png)
 
 5、Testing using the sqlmap tool can also detect SQL injection vulnerabilities
 
-![](/itype4.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Loan-Management-System/images/itype4.png)
