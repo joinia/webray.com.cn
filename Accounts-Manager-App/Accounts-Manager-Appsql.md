@@ -35,18 +35,18 @@ Connection: close
 
 1、Visit the homepage, click to delete the entry, and after capturing the package, find that the file used is delete-account.php
 
- ![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-APP/images/sql2.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-App/images/sql2.png)
 
 2、Upon reviewing the source code, it was discovered that the account parameter was directly concatenated into the SQL statement
 
- ![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-APP/images/sql4.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-App/images/sql4.png)
 
 4、Construct error injection, annotate database username, and successfully reproduce SQL injection vulnerability.
 
 payload:`account=6'%20AND%20GTID_SUBSET(CONCAT(0x7170716b71,(SELECT%20user()),0x716a6b7871),4674)--%20nxwp`
 
- ![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-APP/images/sql1.png)
+ ![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-App/images/sql1.png)
 
 5、You can also directly use the sqlmap tool to run the results
 
-![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-APP/images/sql3.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-App/images/sql3.png)
