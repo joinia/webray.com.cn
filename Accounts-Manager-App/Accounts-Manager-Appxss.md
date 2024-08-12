@@ -41,12 +41,12 @@ account_name=%3Cscript%3Ealert%28%22a%22%29%3C%2Fscript%3E&username=admin&passwo
 
 1、Visit the website, click on "add Account", and fill in the xss payload in the "Account Name" field
 
-![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-APP/images/xss2.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-App/images/xss2.png)
 
 2、After successfully adding, re visiting the page will trigger an XSS pop-up window
 
-![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-APP/images/xss1.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-App/images/xss1.png)
 
 3、The captured post packet is as follows：
 
-![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-APP/images/xss3.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Accounts-Manager-App/images/xss3.png)
