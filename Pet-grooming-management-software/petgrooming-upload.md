@@ -16,7 +16,7 @@
 
 #### Description
 
-Pet mining management software has an arbitrary file upload vulnerability. In the upload avatar function, due to insufficient filtering of file suffixes, attackers can exploit this vulnerability to gain server privileges by uploading malicious files.
+Pet grooming management software has an arbitrary file upload vulnerability. In the upload avatar function, due to insufficient filtering of file suffixes, attackers can exploit this vulnerability to gain server privileges by uploading malicious files.
 
 #### Payload used:
 
@@ -97,7 +97,6 @@ Content-Disposition: form-data; name="update"
 
 4、After sending the request packet, the file can be accessed on the page, and the PHP file has been parsed, displaying information related to PHPINfo.
 
-payload:`http://xxxx/deleteBorrower.php?borrower_id=1'%20AND%20GTID_SUBSET(CONCAT("data:",database()),8194)--%20GZSp`
 
 ![image](https://github.com/joinia/webray.com.cn/blob/main/Pet-grooming-management-software/images/uploadfile.png)
 
