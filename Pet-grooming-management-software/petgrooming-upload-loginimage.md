@@ -16,7 +16,7 @@
 
 #### Description
 
-Pet grooming management software has an arbitrary file upload vulnerability. In the upload avatar function, due to insufficient filtering of file suffixes, attackers can exploit this vulnerability to gain server privileges by uploading malicious files.
+The pet grooming management software has a vulnerability in uploading arbitrary files. In the 'manage_website.php' file, due to insufficient filtering of file suffixes, attackers can exploit this vulnerability to gain server privileges by uploading malicious files.
 
 #### Payload used:
 
