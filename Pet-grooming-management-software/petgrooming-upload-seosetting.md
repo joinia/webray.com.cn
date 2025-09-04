@@ -20,7 +20,7 @@ The pet grooming management software has a vulnerability in uploading arbitrary 
 
 #### Payload used:
 
-```POST /login.php HTTP/1.1
+```
 POST /admin/seo_setting.php HTTP/1.1
 Host: 192.168.67.28:8021
 Accept-Encoding: gzip, deflate
