@@ -92,7 +92,7 @@ Content-Disposition: form-data; name="btn_web"
 
 1、Log in to the system using the default password mdkhairnar92@gmail.com: admin
 
-2、Request the admin\operation\user.php interface to modify the website_image to the PHP malicious file we are about to upload.
+2、Request the admin/operation/user.php interface to modify the website_image to the PHP malicious file we are about to upload.
 
 ![image](https://github.com/joinia/webray.com.cn/blob/main/Pet-grooming-management-software/images/uploadpayloaduser.png)
 
