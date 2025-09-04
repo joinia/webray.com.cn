@@ -20,7 +20,7 @@ The reason for the SQL injection vulnerability is that the website application d
 
 #### Payload used:
 
-```POST /login.php HTTP/1.1
+```
 POST /admin/barcode.php HTTP/1.1
 Host: 192.168.67.28:8021
 Accept-Encoding: gzip, deflate
