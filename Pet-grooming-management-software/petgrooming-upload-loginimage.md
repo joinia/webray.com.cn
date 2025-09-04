@@ -116,7 +116,7 @@ Content-Disposition: form-data; name="btn_web"
 
 ![image](https://github.com/joinia/webray.com.cn/blob/main/Pet-grooming-management-software/images/page2.png)
 
-3、Modify the website_image to the PHP malicious file we are about to upload
+3、Modify the login_image to the PHP malicious file we are about to upload
 
 ![image](https://github.com/joinia/webray.com.cn/blob/main/Pet-grooming-management-software/images/uploadpayload-website.png)
 
