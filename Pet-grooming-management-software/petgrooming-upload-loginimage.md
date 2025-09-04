@@ -112,7 +112,7 @@ Content-Disposition: form-data; name="btn_web"
 
 1、Log in to the system using the default password mdkhairnar92@gmail.com: admin
 
-2、Upload the file and capture the package at the avatar upload location
+2、Upload the file and capture the package.
 
 ![image](https://github.com/joinia/webray.com.cn/blob/main/Pet-grooming-management-software/images/page2.png)
 
@@ -126,6 +126,6 @@ Content-Disposition: form-data; name="btn_web"
 
 ![image](https://github.com/joinia/webray.com.cn/blob/main/Pet-grooming-management-software/images/uploadpage2.png)
 
-5、Pet-grooming-management-software
+5、Source code related to vulnerabilities.
 
 ![image](https://github.com/joinia/webray.com.cn/blob/main/Pet-grooming-management-software/images/code-loginimage.png)
